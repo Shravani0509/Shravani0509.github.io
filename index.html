@@ -284,6 +284,30 @@ nav {
   box-shadow: 0 6px 24px rgba(0,0,0,0.35); display: block;
   transition: transform 0.4s;
 }
+
+.project-img-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.project-img-grid img{
+
+width:100%;
+height:240px;
+object-fit:cover;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,.18);
+transition:.35s;
+
+}
+
+.project-img-grid img:hover{
+
+transform:scale(1.03);
+
+}
+
 .project-card:hover .project-img-col img { transform: scale(1.03); }
 .project-img-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 6px; width: 100%;
@@ -850,121 +874,134 @@ footer { background: #091a40; padding: 20px 48px; text-align: center; font-size:
     </div>
 
   <div class="project-card">
-  <div class="project-inner">
 
-    <div class="project-img-col">
+    <div class="project-inner">
 
-      <div class="project-img-grid">
-        <img src="images/credit-risk-summary.png"
-             alt="Loan Risk Analysis Summary">
+        <div class="project-img-col">
 
-        <img src="images/credit-risk-overview.png"
-             alt="Loan Risk Analysis Overview">
-      </div>
+            <div class="project-img-grid">
+
+                <img src="images/credit-risk-summary.png"
+                     alt="Credit Risk Summary">
+
+                <img src="images/credit-risk-overview.png"
+                     alt="Credit Risk Overview">
+
+            </div>
+
+        </div>
+
+        <div class="project-content">
+
+            <div class="project-meta">
+
+                <span class="project-number">
+                    PROJECT 04
+                </span>
+
+                <span class="project-badge analytics">
+                    Data Analytics
+                </span>
+
+                <span class="project-badge finance">
+                    Finance
+                </span>
+
+                <span class="project-badge powerbi">
+                    Power BI
+                </span>
+
+            </div>
+
+            <h3>
+                Credit Risk Loan Performance Analysis
+            </h3>
+
+            <p class="project-subtitle">
+                Interactive Banking Analytics Dashboard using Power BI
+            </p>
+
+            <div class="project-stats">
+
+                <div class="stat-card">
+                    <span class="stat-value">38.6K</span>
+                    <span class="stat-label">Applications</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-value">$435.8M</span>
+                    <span class="stat-label">Funded</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-value">12%</span>
+                    <span class="stat-label">Interest</span>
+                </div>
+
+            </div>
+
+            <p class="project-description">
+
+                Designed an interactive Power BI dashboard to analyze
+                banking loan performance and customer credit risk.
+                The dashboard provides actionable insights into loan
+                approval trends, funded amount, repayment behaviour,
+                loan status and financial KPIs.
+
+            </p>
+
+            <ul class="project-highlights">
+
+                <li>✔ Good Loan vs Bad Loan Analysis</li>
+
+                <li>✔ Loan Status Dashboard</li>
+
+                <li>✔ State-wise Loan Applications</li>
+
+                <li>✔ Monthly Funded Amount Trend</li>
+
+                <li>✔ Home Ownership Analysis</li>
+
+                <li>✔ Purpose-wise Loan Distribution</li>
+
+                <li>✔ Interest Rate & DTI Analysis</li>
+
+                <li>✔ Interactive KPI Dashboard</li>
+
+            </ul>
+
+            <div class="project-tags">
+
+                <span>Power BI</span>
+
+                <span>DAX</span>
+
+                <span>Power Query</span>
+
+                <span>Excel</span>
+
+                <span>Finance</span>
+
+                <span>Data Visualization</span>
+
+            </div>
+
+            <div class="project-links">
+
+                <a href="https://github.com/Shravani0509/Credit-Risk-Loan-Performance-Analysis"
+                   target="_blank"
+                   class="btn">
+
+                    View on GitHub
+
+                </a>
+
+            </div>
+
+        </div>
 
     </div>
 
-    <div class="project-content">
-
-      <div class="project-meta">
-
-        <span class="project-number">PROJECT 04</span>
-
-        <span class="project-badge analytics">
-          Data Analytics
-        </span>
-
-        <span class="project-badge finance">
-          Finance
-        </span>
-
-      </div>
-
-      <h3>Credit Risk Loan Performance Analysis</h3>
-
-      <p class="project-subtitle">
-        Interactive dashboards for loan risk insights
-      </p>
-
-      <div class="project-stats">
-
-        <div class="stat-card">
-          <span class="stat-value">38.6K</span>
-          <span class="stat-label">Applications</span>
-        </div>
-
-        <div class="stat-card">
-          <span class="stat-value">$435.8M</span>
-          <span class="stat-label">Funded</span>
-        </div>
-
-        <div class="stat-card">
-          <span class="stat-value">12%</span>
-          <span class="stat-label">Avg Interest</span>
-        </div>
-
-      </div>
-
-      <p class="project-description">
-
-        Developed an end-to-end Credit Risk Loan Performance Analysis
-        dashboard using Power BI to evaluate loan quality,
-        borrower behaviour, funded amount, repayments,
-        and financial KPIs.
-
-      </p>
-
-      <ul class="project-highlights">
-
-        <li>Good Loan vs Bad Loan Analysis</li>
-
-        <li>Loan Status Breakdown (Fully Paid, Current, Charged Off)</li>
-
-        <li>Total Loan Applications by State</li>
-
-        <li>Monthly Funded Amount Trend</li>
-
-        <li>Interest Rate & DTI Analysis</li>
-
-        <li>Home Ownership Analysis</li>
-
-        <li>Loan Purpose Analysis</li>
-
-        <li>Interactive Power BI Dashboard</li>
-
-      </ul>
-
-      <div class="project-tags">
-
-        <span>Power BI</span>
-
-        <span>Data Visualization</span>
-
-        <span>DAX</span>
-
-        <span>Power Query</span>
-
-        <span>Finance</span>
-
-        <span>Risk Analysis</span>
-
-      </div>
-
-      <div class="project-buttons">
-
-        <a href="https://github.com/Shravani0509/Credit-Risk-Loan-Performance-Analysis"
-           target="_blank"
-           class="github-btn">
-
-          View on GitHub
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
 </div>
 
     <div class="project-card">
